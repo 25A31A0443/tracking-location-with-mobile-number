@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double x1, y1, x2, y2;
+    double distance;
+
+    printf("=== Shortest Path Finder ===\n");
+
+    // Input first location
+    printf("Enter first location coordinates:\n");
+    printf("X1: ");
+    scanf("%lf", &x1);
+
+    printf("Y1: ");
+    scanf("%lf", &y1);
+
+    // Input second location
+    printf("\nEnter second location coordinates:\n");
+    printf("X2: ");
+    scanf("%lf", &x2);
+
+    printf("Y2: ");
+    scanf("%lf", &y2);
+
+    // Distance formula
+    distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+    printf("\nShortest distance between locations = %.2lf units\n", distance);
+
+    return 0;
+}
